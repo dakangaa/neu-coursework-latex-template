@@ -1,0 +1,36 @@
+% 使用上游排版类, 将课程作业差异集中放在此文件。
+\makeatletter
+% 不插入奇偶页空白, 避免课程作业超过规定页数。
+\let\cleardoublepage\clearpage
+\renewcommand{\mainmatter}{\clearpage\@mainmattertrue\neu@bodymattertrue\@openrightfalse\pagenumbering{arabic}\normalsize}
+\makeatother
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[L]{\kaishu\zihao{5}[课程名称]课程作业}
+  \fancyhead[R]{\kaishu\zihao{5}\leftmark}
+  \fancyfoot[C]{\zihao{-4}-\ \thepage\ -}
+  \renewcommand{\headrulewidth}{0.5pt}
+}
+\pagestyle{plain}
+% 允许页底自然留白, 避免为上下对齐拉大正文段间距。
+\raggedbottom
+\setcounter{tocdepth}{1}
+% 将课程报告的目录压缩到单页, 保留正文原有字号与行距。
+\setlength{\cftbeforechapskip}{5pt}
+\setlength{\cftbeforesecskip}{0pt}
+\renewcommand{\cftchapfont}{\heiti\zihao{-4}}
+\renewcommand{\cftchappagefont}{\zihao{-4}}
+\setlist[itemize]{nosep,leftmargin=2em}
+
+% 保持小四号正文, 用 18 磅行距为课程报告的插图留出篇幅。
+\setbodyleading{18bp}
+
+% 课程报告采用紧凑标题间距, 正文字号和行距不变。
+\ctexset{section={beforeskip=8bp,afterskip=8bp}}
+% 参考文献使用五号字, 保留模板的顺序编码样式。
+\AtBeginEnvironment{thebibliography}{\zihao{5}\setlength{\baselineskip}{13bp}\raggedright}
+
+% 防止章节交界处留下很短的段落续行。
+\clubpenalty=10000
+\widowpenalty=10000
+

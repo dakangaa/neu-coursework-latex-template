@@ -1,0 +1,38 @@
+% 依据东北大学官网硕士论文格式附件的题名页布局适配课程作业。
+% 保留信息栏、居中标题、下部信息表和底部校名日期, 不填写学位答辩字段。
+\begin{titlepage}
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\songti\zihao{4}
+\vspace*{5mm}
+\noindent\makebox[6em][s]{课\hfill 程\hfill 名\hfill 称}\quad
+\underline{\makebox[10em][c]{[课程名称]}}
+\par
+\vspace{17mm}
+\begin{center}
+{\songti\zihao{2}课\hspace{1em}程\hspace{1em}作\hspace{1em}业\par}
+\vspace{25mm}
+{\heiti\zihao{-2}\setlength{\baselineskip}{30bp}%
+[报告标题]\par}
+\end{center}
+\vspace{21mm}
+\begin{center}
+\songti\zihao{4}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{@{}r@{\hspace{1.5em}}l@{}}
+\makebox[7em][s]{作\hfill 者\hfill 姓\hfill 名}: & [姓名]\\
+\makebox[7em][s]{作\hfill 者\hfill 学\hfill 号}: & [学号]\\
+\makebox[7em][s]{所\hfill 在\hfill 学\hfill 院}: & [学院]\\
+\makebox[7em][s]{学\hfill 科\hfill 专\hfill 业}: & [专业]\\
+\makebox[7em][s]{任\hfill 课\hfill 教\hfill 师}: & [教师]\\
+\makebox[7em][s]{报\hfill 告\hfill 完\hfill 成\hfill 日\hfill 期}: & [日期]
+\end{tabular}
+\end{center}
+\vfill
+\begin{center}
+{\songti\zihao{4}[学校名称]\par}
+\vspace{5mm}
+{\songti\zihao{4}[日期]\par}
+\end{center}
+\vspace*{7mm}
+\end{titlepage}

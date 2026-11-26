@@ -1,0 +1,16 @@
+\documentclass{NEUMasterThesis}
+\input{coursework-config}
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{cover}
+\frontmatter
+\hypersetup{pageanchor=true}
+\input{chapters/abstract}
+{\setstretch{1}\tableofcontents}
+\mainmatter
+\input{chapters/chapter01}
+\input{chapters/conclusion}
+% 在 references/refs.bib 中添加参考文献。
+\backmatter
+\bibliography{references/refs}
+\end{document}

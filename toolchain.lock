@@ -1,0 +1,6 @@
+# 本次已下载的 Linux x86_64 编译器与上游模板版本。
+tectonic_version=0.17.0
+tectonic_archive_url=https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz
+tectonic_archive_sha256=8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7
+tectonic_binary_sha256=a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da
+template_commit=6988f9bbbaf4f8a401daa3135751999c833736a5
